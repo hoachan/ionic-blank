@@ -5,20 +5,24 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title>The List Of User</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-  <button ion-button>User 'Andy Chan'</button>
+  <button ion-button (click) = "onLoadUser('Andy Chan')">User 'Andy Chan'</button>
   <hr>
-  <button ion-button>User 'Hidetoshi '</button>
+  <button ion-button (click) = "onLoadUser('Hidetoshi Nakata')">User 'Hidetoshi '</button>
 </ion-content>
 
 <ion-footer padding>
   <p>The Foooter</p>
+</ion-footer>
+
+<ion-footer>
+    <p>
+        Copyright@2017
+    </p>
 </ion-footer>
