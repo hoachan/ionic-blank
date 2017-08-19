@@ -27,4 +27,11 @@ export class UsersPage {
   onLoadUser(name){
     this.navCtrl.push(UserPage, {userName : name});
   }
+
+  ionViewCanEnter() : boolean | Promise<boolean>{
+    console.log('ionViewCanEnter');
+
+    const rnd = Math.random();
+    return rnd > 0.5;
+  }
 }
